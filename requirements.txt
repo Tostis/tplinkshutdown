@@ -1,0 +1,13 @@
+aes==1.0.0
+certifi==2020.6.20
+chardet==3.0.4
+dnspython==2.1.0
+idna==2.9
+Naked==0.1.31
+pycryptodome==3.9.7
+PyYAML==5.3.1
+requests==2.24.0
+scapy==2.4.5
+shellescape==3.8.1
+urllib3==1.25.9
+setuptools~=57.0.0

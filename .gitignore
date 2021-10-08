@@ -1,0 +1,6 @@
+/build/
+/dist/
+/tplinkshutdown_tostis.egg-info/
+*.spec
+/venv/
+tplinkshutdown/__pycache__/
