@@ -2,7 +2,7 @@
 
 Simple python script to **reboot** a **TP-Link Powerline Adapter**.
 
-Restarts TL-WPA8630 with \<ip> using \<password>. It can optionally restart the powerline adapter only if fails 5 ping attempts to <healthip>.
+Restarts TL-WPA8630 with \<ip> using \<password>. It can optionally restart the powerline adapter only if fails 5 ping attempts to \<healthip>.
 
 Does three http calls as result from reverse engineering of javascript GUI.
 1) Call to /login?form=auth to obtain RSA modulus and exponent
@@ -21,13 +21,13 @@ pip3 install tplinkshutdown_tostis-x.x.x-py3-none-any.whl
 launch as script from *tplinkshutdown* folder
 ```
 tplinkshutdown.py -p <password> -i <ip> [-r <ip>]
-tplinkshutdown.py --password=<password> --ip=<ip> [healthip=<ip>]
+tplinkshutdown.py --password=<password> --ip=<ip> [--healthip=<ip>]
 
 tplinkshutdown.py -p <password> -o <hostname> [-r <ip>]
-tplinkshutdown.py --password=<password> --hostname=<hostname> [healthip=<ip>]
+tplinkshutdown.py --password=<password> --hostname=<hostname> [--healthip=<ip>]
 
 tplinkshutdown.py -p <password> -m <macaddress> [-r <ip>]
-tplinkshutdown.py --password=<password> --mac=<macaddress> [healthip=<ip>]
+tplinkshutdown.py --password=<password> --mac=<macaddress> [--healthip=<ip>]
 ```
 the mac address option needs root access and is useful as workaround for [Powerline Extender Acting as the DHCP server](https://community.tp-link.com/en/home/forum/topic/265692)
 
